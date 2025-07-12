@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Summer Music Festival",
+    "date": "2025-07-25",
+    "time": "18:00",
+    "location": "Central Park, New York",
+    "category": "Music",
+    "description": "Join us for an amazing summer music festival featuring local and international artists.",
+    "image": "https://via.placeholder.com/300x200?text=Music+Festival",
+    "price": "$50",
+    "organizer": "NYC Events"
+  },
+  {
+    "id": 2,
+    "name": "Food & Wine Expo",
+    "date": "2025-07-30",
+    "time": "12:00",
+    "location": "Convention Center, Los Angeles",
+    "category": "Food",
+    "description": "Taste the finest cuisines and wines from around the world.",
+    "image": "https://via.placeholder.com/300x200?text=Food+Expo",
+    "price": "$30",
+    "organizer": "LA Food Events"
+  },
+  {
+    "id": 3,
+    "name": "Tech Conference 2025",
+    "date": "2025-08-15",
+    "time": "09:00",
+    "location": "Silicon Valley, California",
+    "category": "Technology",
+    "description": "Latest trends in technology and innovation.",
+    "image": "https://via.placeholder.com/300x200?text=Tech+Conference",
+    "price": "$150",
+    "organizer": "Tech Innovations Inc"
+  },
+  {
+    "id": 4,
+    "name": "Art Gallery Opening",
+    "date": "2025-08-20",
+    "time": "19:00",
+    "location": "Downtown Gallery, Chicago",
+    "category": "Art",
+    "description": "Discover contemporary art from emerging artists.",
+    "image": "https://via.placeholder.com/300x200?text=Art+Gallery",
+    "price": "Free",
+    "organizer": "Chicago Arts Council"
+  },
+  {
+    "id": 5,
+    "name": "Marathon Run",
+    "date": "2025-09-05",
+    "time": "06:00",
+    "location": "Boston Common, Boston",
+    "category": "Sports",
+    "description": "Annual marathon event for fitness enthusiasts.",
+    "image": "https://via.placeholder.com/300x200?text=Marathon",
+    "price": "$25",
+    "organizer": "Boston Sports Association"
+  },
+  {
+    "id": 6,
+    "name": "Comedy Night",
+    "date": "2025-08-10",
+    "time": "20:00",
+    "location": "Comedy Club, Miami",
+    "category": "Entertainment",
+    "description": "Laugh out loud with top comedians.",
+    "image": "https://via.placeholder.com/300x200?text=Comedy+Night",
+    "price": "$40",
+    "organizer": "Miami Comedy Club"
+  }
+]
