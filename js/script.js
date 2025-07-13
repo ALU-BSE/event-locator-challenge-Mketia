@@ -8,7 +8,7 @@ const eventData = [
     category: "technology",
     description: "Annual conference on AI, blockchain, and more.",
     price: "$50",
-    image: "https://via.placeholder.com/300x200"
+    image: "images/pic1.jpg"
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const eventData = [
     category: "music",
     description: "Three-day music festival with local and international artists.",
     price: "$25",
-    image: "https://via.placeholder.com/300x200"
+    image: "images/concert.jpg"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const eventData = [
     category: "art",
     description: "Contemporary art from emerging African artists.",
     price: "Free",
-    image: "https://via.placeholder.com/300x200"
+    image: "images/art.jpg"
   }
 ];
 
@@ -47,6 +47,8 @@ function loadHomePage() {
   const searchInput = document.getElementById("searchInput");
   const categoryFilter = document.getElementById("categoryFilter");
   const dateFilter = document.getElementById("dateFilter");
+  const searchForm = document.getElementById("searchForm");
+  const eventContainer = document.getElementById("eventContainer");
 
   function filterAndDisplay() {
     const term = searchInput.value.toLowerCase();
@@ -62,12 +64,23 @@ function loadHomePage() {
       return matchSearch && matchCategory && matchDate;
     });
 
-    displayEvents(filtered, featuredEventsContainer);
+    if (eventContainer) {
+      if (filtered.length === 0) {
+        eventContainer.innerHTML = '<div class="col-12"><p class="text-danger">No events found matching your search.</p></div>';
+      } else {
+        displayEvents(filtered, eventContainer);
+      }
+    } else {
+      displayEvents(filtered, featuredEventsContainer);
+    }
   }
 
-  if (searchInput) searchInput.addEventListener("input", filterAndDisplay);
-  if (categoryFilter) categoryFilter.addEventListener("change", filterAndDisplay);
-  if (dateFilter) dateFilter.addEventListener("change", filterAndDisplay);
+  if (searchForm) {
+    searchForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      filterAndDisplay();
+    });
+  }
 
   displayEvents(eventData, featuredEventsContainer);
 }
@@ -115,7 +128,7 @@ function loadEventsPage() {
   displayEvents(eventData, container);
 }
 
-// ==================== event-details.html ====================
+//  event-details.html
 function loadEventDetailsPage() {
   const detailsContainer = document.getElementById("eventDetailsContainer");
 
@@ -168,7 +181,6 @@ function displayEvents(events, container) {
   `).join('');
 }
 
-// ==================== Init ====================
 document.addEventListener("DOMContentLoaded", () => {
   const page = window.location.pathname;
   if (page.includes("index.html")) loadHomePage();

@@ -46,3 +46,64 @@ and a brief description. Users can filter events by date and category.
    - Test the application on different screen sizes.
 
 #### [Resources](https://github.com/ALU-BSE/afd-2023m-week-8-challenge/blob/main/assignment_resources.md)
+
+
+
+
+
+---
+
+## Project Setup and Installation
+
+1. Clone the repository  
+   `git clone https://github.com/ALU-BSE/event-locator-challenge-Mketia`
+
+2. Open the project folder in your code editor or Codespaces.
+
+3. Open `index.html` in a browser to start the app.
+
+4. No backend setup required as data is local in JavaScript.
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3 and Bootstrap 5 (via CDN)
+- JavaScript (ES6+)
+
+---
+
+## Features
+
+- Home page with search and filter for events by date and category.
+- Event listing page showing event cards dynamically.
+- Event details page with full info about each event.
+- Responsive design for mobile and desktop using Bootstrap.
+- Search functionality with live filtering and no-results message.
+
+---
+
+## How to Use
+
+- On the home page, enter event name or location, select a date and/or category, then click "Search Events".
+- Browse the events displayed based on your search and filters.
+- Click "View Details" on an event card to see detailed information about that event.
+
+---
+
+## Known Issues or Limitations
+
+- Event data is static and stored in local JavaScript.
+- The "Book Now" button is a placeholder and does not process real bookings.
+
+---
+
+## Acknowledgments
+
+- Assignment and resources provided by ALU BSE.
+- Bootstrap official documentation: https://getbootstrap.com/docs/5.3/
+- MDN Web Docs JavaScript tutorials: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+---
+
